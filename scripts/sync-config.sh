@@ -1,6 +1,5 @@
 #!/bin/bash
 # Read app-config.json (or app-config.example.json) and bake it into the iOS target.
-# Same keys and defaults as the Android app/build.gradle config loader.
 set -euo pipefail
 
 if [[ -n "${SRCROOT:-}" ]]; then

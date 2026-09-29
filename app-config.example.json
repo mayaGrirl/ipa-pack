@@ -22,13 +22,13 @@
   "_show_privacy_on_first_launch": "首次启动是否显示隐私协议页。true=先协议再引导/主页；false=跳过协议。默认 true",
   "show_privacy_on_first_launch": true,
 
-  "_privacy_policy_url": "隐私协议网页地址。留空 \"\" 则加载本地 assets/privacy_policy.html；填写 https://... 则加载远程页",
+  "_privacy_policy_url": "隐私协议网页地址。留空 \"\" 则加载本地 XinJi28/Resources/privacy_policy.html；填写 https://... 则加载远程页",
   "privacy_policy_url": "",
 
   "_show_guide_on_first_launch": "首次启动是否显示滑动引导页。true=显示；false=跳过引导直接进主页。默认 true",
   "show_guide_on_first_launch": true,
 
-  "_enable_video_splash": "引导第一页用视频还是图文。true=视频（需 res/raw/splash_video.mp4，没有则自动降级图文）；false=图文。默认 false",
+  "_enable_video_splash": "引导第一页用视频还是图文。true=视频（需 XinJi28/Resources/splash_video.mp4，没有则自动降级图文）；false=图文。默认 false",
   "enable_video_splash": false,
 
   "_splash_duration_ms": "冷启动页、从后台恢复过渡页的停留毫秒数。默认 2500（2.5 秒）",

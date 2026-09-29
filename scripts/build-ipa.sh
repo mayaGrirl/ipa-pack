@@ -44,6 +44,13 @@ xcodegen generate --spec "$ROOT/project.yml"
 
 ARCHIVE="$ROOT/build/XinJi28.xcarchive"
 EXPORT_DIR="$ROOT/build/ipa"
+if [[ "$METHOD" == "development" ]]; then
+  CONFIGURATION="Debug"
+  DEST_NAME="XJ28-debug.ipa"
+else
+  CONFIGURATION="Release"
+  DEST_NAME="XJ28-release.ipa"
+fi
 
 rm -rf "$ARCHIVE" "$EXPORT_DIR"
 mkdir -p "$ROOT/build"
@@ -51,7 +58,7 @@ mkdir -p "$ROOT/build"
 xcodebuild \
   -project "$ROOT/XinJi28.xcodeproj" \
   -scheme XinJi28 \
-  -configuration Release \
+  -configuration "$CONFIGURATION" \
   -destination "generic/platform=iOS" \
   -archivePath "$ARCHIVE" \
   DEVELOPMENT_TEAM="$TEAM_ID" \
@@ -70,11 +77,7 @@ if [[ -z "$IPA" ]]; then
   exit 1
 fi
 
-if [[ "$METHOD" == "development" ]]; then
-  DEST="$EXPORT_DIR/新纪28-debug.ipa"
-else
-  DEST="$EXPORT_DIR/XJ28-release.ipa"
-fi
+DEST="$EXPORT_DIR/$DEST_NAME"
 mv "$IPA" "$DEST"
 
 python3 - "$ROOT/version.properties" <<'PY'

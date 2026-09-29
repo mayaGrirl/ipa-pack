@@ -1,6 +1,6 @@
 import Foundation
 
-/// 壳包运行时配置。数值来自打包时读取的 `app-config.json`，字段与 Android `app/build.gradle` 一致。
+/// 壳包运行时配置。数值来自打包时读取的 `app-config.json`。
 enum ShellConfig {
     static var webURL: String { AppConfig.webURL }
 
@@ -19,7 +19,6 @@ enum ShellConfig {
     static var remoteConfigCacheHours: Int { AppConfig.remoteConfigCacheHours }
     static var appName: String { AppConfig.appName }
 
-    /// 与 Android `strings.xml` 的 splash_tagline 相同，不在 app-config.json 里。
     static let splashTagline = "畅享精彩 尽在XJ28"
 
     static var versionName: String {

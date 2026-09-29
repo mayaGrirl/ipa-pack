@@ -1,6 +1,6 @@
 import UIKit
 
-/// 启动页和从后台回到前台时共用的过渡页，对齐 Android `activity_splash.xml`：全屏启动图，底部加载。
+/// 启动页和从后台回到前台时共用的过渡页：全屏启动图，底部加载。
 final class SplashContentView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)

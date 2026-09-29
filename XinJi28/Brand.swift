@@ -1,6 +1,6 @@
 import UIKit
 
-/// 与 Android `colors.xml` 相同的品牌色。
+/// 品牌色。
 enum Brand {
     static let primary = UIColor(red: 0x1A / 255, green: 0x23 / 255, blue: 0x7E / 255, alpha: 1)
     static let primaryDark = UIColor(red: 0x0D / 255, green: 0x16 / 255, blue: 0x42 / 255, alpha: 1)
