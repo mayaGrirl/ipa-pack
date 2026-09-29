@@ -1,0 +1,42 @@
+{
+  "_说明": "复制本文件为 app-config.json 后改值即可，打包时自动读取；app-config.json 已被 git 忽略。以下以 _ 开头的键仅为注释，打包不读取。缺省字段走代码默认值。版本号仍走 version.properties。",
+
+  "_application_id": "包唯一标识。改动后是新 App，可与旧包共存，但数据和登录状态不延续",
+  "application_id": "com.xj28a.app",
+
+  "_app_name": "手机桌面显示的应用名称（桌面图标下方文字）。默认 新记",
+  "app_name": "新记",
+
+  "_web_url": "App 内置兜底域名。未启用热切换、热切换失败或远程 JSON 无效时，WebView 使用此地址",
+  "web_url": "https://test.kaixin28.com",
+
+  "_remote_config_url": "域名热切换静态 JSON 地址。留空则不拉远程，只用 web_url。线上 JSON 一般只含 web_url",
+  "remote_config_url": "https://test.kaixin28.com/app-config.json",
+
+  "_enable_remote_url": "是否启用域名热切换。false 时即使填了 remote_config_url 也不请求，始终用 web_url。默认 true",
+  "enable_remote_url": true,
+
+  "_remote_config_cache_hours": "热切换结果本地缓存有效期（小时）。期内不重复请求远程 JSON。默认 1",
+  "remote_config_cache_hours": 1,
+
+  "_show_privacy_on_first_launch": "首次启动是否显示隐私协议页。true=先协议再引导/主页；false=跳过协议。默认 true",
+  "show_privacy_on_first_launch": true,
+
+  "_privacy_policy_url": "隐私协议网页地址。留空 \"\" 则加载本地 assets/privacy_policy.html；填写 https://... 则加载远程页",
+  "privacy_policy_url": "",
+
+  "_show_guide_on_first_launch": "首次启动是否显示滑动引导页。true=显示；false=跳过引导直接进主页。默认 true",
+  "show_guide_on_first_launch": true,
+
+  "_enable_video_splash": "引导第一页用视频还是图文。true=视频（需 res/raw/splash_video.mp4，没有则自动降级图文）；false=图文。默认 false",
+  "enable_video_splash": false,
+
+  "_splash_duration_ms": "冷启动页、从后台恢复过渡页的停留毫秒数。默认 2500（2.5 秒）",
+  "splash_duration_ms": 2500,
+
+  "_enable_pull_to_refresh": "主页 WebView 是否开启下拉刷新。默认 true",
+  "enable_pull_to_refresh": true,
+
+  "_user_agent_name": "追加到浏览器 UA 的名称前缀，打包时拼成 名称/版本号（如 XJ28App/1.001），便于服务端识别 App 流量",
+  "user_agent_name": "XJ28App"
+}

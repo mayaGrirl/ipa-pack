@@ -1,0 +1,4 @@
+# Copy to version.properties. VERSION_PATCH / VERSION_CODE increment on successful IPA export.
+VERSION_MAJOR=1
+VERSION_PATCH=1
+VERSION_CODE=1

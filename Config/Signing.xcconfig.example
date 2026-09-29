@@ -1,0 +1,4 @@
+// Copy to Config/Signing.xcconfig and fill in your Apple Developer Team ID.
+// Xcode: XinJi28 target → Signing & Capabilities → Team, the 10-character ID.
+DEVELOPMENT_TEAM = 
+CODE_SIGN_STYLE = Automatic

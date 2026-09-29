@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2237ECF77789F657ED29BFCD /* ShellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5993C02598E3B084FECC5 /* ShellConfig.swift */; };
+		24A0CF64C8594CAB7E5C96B1 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F252B722878479BF902157 /* Brand.swift */; };
+		2BE7366749B3851F8BFB5159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F5FFC36F2E8CDF1514295B /* SceneDelegate.swift */; };
+		3FA4FABBFD2F108434C21149 /* RemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36477EE087421DACE580BF /* RemoteConfig.swift */; };
+		47F5840AD49D7602AEF64DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E5EF3DAFE3555E4358811 /* AppDelegate.swift */; };
+		5BB36390BE4D62395DE47036 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64DFC05BF2ACEE894054C3 /* SplashViewController.swift */; };
+		5CD42CBA7611175745ECCF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FFDBFA90E40507EE409AA2 /* LaunchScreen.storyboard */; };
+		5DFB54311C315A0864F26A92 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F5160FFAA22E8D057FFEB /* AppConfig.swift */; };
+		63F96332E5A530EB0AC84125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B66F216585E9398228EBA23 /* Assets.xcassets */; };
+		6EB6F63D853FC25D8F337BAC /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B34EBB9638D024B2998D0C /* GuideViewController.swift */; };
+		76226353435C290BF9E14EFD /* SplashContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE704A9D293263866B0DD51 /* SplashContentView.swift */; };
+		7AF9F0053AB3DAFFCEA6B198 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9918C96762617892B17E42 /* PrivacyViewController.swift */; };
+		8438D6B3BD57D739953D6438 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F30F163197DB32A8E1194E /* MainViewController.swift */; };
+		A043B9F0A4F1D615BBA85E18 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AAE51B9A05242601DCD0A4 /* AppNavigator.swift */; };
+		C593307670A13C2998EE5ED2 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 81583A8D94BB3D63326C938C /* PrivacyInfo.xcprivacy */; };
+		D3ED4BB6B242E73496ADFC39 /* AppPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A6F5D5E2668AEE58809E7C /* AppPrefs.swift */; };
+		F51A96CE36D7EA9174D8616F /* privacy_policy.html in Resources */ = {isa = PBXBuildFile; fileRef = B7EB926587EF4AC89A7DA8FA /* privacy_policy.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		061E5EF3DAFE3555E4358811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C9918C96762617892B17E42 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		14C5993C02598E3B084FECC5 /* ShellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellConfig.swift; sourceTree = "<group>"; };
+		38F30F163197DB32A8E1194E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3D64DFC05BF2ACEE894054C3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		42A6F5D5E2668AEE58809E7C /* AppPrefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrefs.swift; sourceTree = "<group>"; };
+		440F5160FFAA22E8D057FFEB /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		4FE704A9D293263866B0DD51 /* SplashContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContentView.swift; sourceTree = "<group>"; };
+		602C979092962288E182CBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78AAE51B9A05242601DCD0A4 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		7E36477EE087421DACE580BF /* RemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfig.swift; sourceTree = "<group>"; };
+		81583A8D94BB3D63326C938C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		85B34EBB9638D024B2998D0C /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		9B66F216585E9398228EBA23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4F252B722878479BF902157 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		B7EB926587EF4AC89A7DA8FA /* privacy_policy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy_policy.html; sourceTree = "<group>"; };
+		D6F5FFC36F2E8CDF1514295B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF15BCB9ECF2C0EA96E58588 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		E07D11F68B5895D08F0B6618 /* XinJi28.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = XinJi28.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B1F2FD6CD38E78072136AEE5 = {
+			isa = PBXGroup;
+			children = (
+				D71D5B3AF7D2DF4B5C46794E /* Config */,
+				BA00B9533F5F9EC6881DF093 /* XinJi28 */,
+				FFA25D01BB54300F78581771 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA00B9533F5F9EC6881DF093 /* XinJi28 */ = {
+			isa = PBXGroup;
+			children = (
+				E7FFDBFA90E40507EE409AA2 /* LaunchScreen.storyboard */,
+				F85617FE3F2EECC631AEA6F5 /* Resources */,
+				440F5160FFAA22E8D057FFEB /* AppConfig.swift */,
+				061E5EF3DAFE3555E4358811 /* AppDelegate.swift */,
+				78AAE51B9A05242601DCD0A4 /* AppNavigator.swift */,
+				42A6F5D5E2668AEE58809E7C /* AppPrefs.swift */,
+				9B66F216585E9398228EBA23 /* Assets.xcassets */,
+				B4F252B722878479BF902157 /* Brand.swift */,
+				85B34EBB9638D024B2998D0C /* GuideViewController.swift */,
+				38F30F163197DB32A8E1194E /* MainViewController.swift */,
+				81583A8D94BB3D63326C938C /* PrivacyInfo.xcprivacy */,
+				0C9918C96762617892B17E42 /* PrivacyViewController.swift */,
+				7E36477EE087421DACE580BF /* RemoteConfig.swift */,
+				D6F5FFC36F2E8CDF1514295B /* SceneDelegate.swift */,
+				14C5993C02598E3B084FECC5 /* ShellConfig.swift */,
+				4FE704A9D293263866B0DD51 /* SplashContentView.swift */,
+				3D64DFC05BF2ACEE894054C3 /* SplashViewController.swift */,
+			);
+			path = XinJi28;
+			sourceTree = "<group>";
+		};
+		D71D5B3AF7D2DF4B5C46794E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF15BCB9ECF2C0EA96E58588 /* App.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F85617FE3F2EECC631AEA6F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7EB926587EF4AC89A7DA8FA /* privacy_policy.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFA25D01BB54300F78581771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E07D11F68B5895D08F0B6618 /* XinJi28.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59B895D6DBF3E2DCE0E7C856 /* XinJi28 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB16C689342FFC605A964F1 /* Build configuration list for PBXNativeTarget "XinJi28" */;
+			buildPhases = (
+				0802C155B124703AA1D6CABF /* Sync app-config.json */,
+				36CC92FF6F84A7078EC0B0C2 /* Sync version.properties */,
+				DD4379490AD6AEDFD1A7FAF3 /* Sources */,
+				405C1E556878003694FC9309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XinJi28;
+			packageProductDependencies = (
+			);
+			productName = XinJi28;
+			productReference = E07D11F68B5895D08F0B6618 /* XinJi28.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AA73495D2482FFF354B33A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					59B895D6DBF3E2DCE0E7C856 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4D0DABB489B717F0029883E3 /* Build configuration list for PBXProject "XinJi28" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B1F2FD6CD38E78072136AEE5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FFA25D01BB54300F78581771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59B895D6DBF3E2DCE0E7C856 /* XinJi28 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		405C1E556878003694FC9309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F96332E5A530EB0AC84125 /* Assets.xcassets in Resources */,
+				5CD42CBA7611175745ECCF91 /* LaunchScreen.storyboard in Resources */,
+				C593307670A13C2998EE5ED2 /* PrivacyInfo.xcprivacy in Resources */,
+				F51A96CE36D7EA9174D8616F /* privacy_policy.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0802C155B124703AA1D6CABF /* Sync app-config.json */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sync app-config.json";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n# Read app-config.json (or app-config.example.json) and bake it into the iOS target.\n# Same keys and defaults as the Android app/build.gradle config loader.\nset -euo pipefail\n\nif [[ -n \"${SRCROOT:-}\" ]]; then\n  ROOT=\"$SRCROOT\"\nelse\n  ROOT=\"$(cd \"$(dirname \"$0\")/..\" && pwd)\"\nfi\npython3 - \"$ROOT\" <<'PY'\nimport json, sys\nfrom pathlib import Path\n\nroot = Path(sys.argv[1])\nreal = root / \"app-config.json\"\ntemplate = root / \"app-config.example.json\"\nsource = real if real.exists() else template\nif not source.exists():\n    raise SystemExit(f\"缺少配置文件: {template}\")\ntry:\n    data = json.loads(source.read_text(encoding=\"utf-8\"))\nexcept json.JSONDecodeError as exc:\n    raise SystemExit(f\"壳包配置文件解析失败: {source.name}，请检查 JSON 格式 -> {exc}\") from exc\n\ndef config_str(key, default):\n    value = data.get(key)\n    return default if value is None else str(value)\n\ndef config_bool(key, default):\n    value = data.get(key)\n    if value is None:\n        return default\n    if isinstance(value, bool):\n        return value\n    return str(value).lower() == \"true\"\n\ndef config_int(key, default):\n    value = data.get(key)\n    return default if value is None else int(value)\n\napplication_id = config_str(\"application_id\", \"com.xj28a.app\")\napp_name = config_str(\"app_name\", \"新记\")\nweb_url = config_str(\"web_url\", \"https://test.kaixin28.com\")\nremote_config_url = config_str(\"remote_config_url\", \"\")\nenable_remote_url = config_bool(\"enable_remote_url\", True)\nremote_config_cache_hours = config_int(\"remote_config_cache_hours\", 1)\nshow_privacy = config_bool(\"show_privacy_on_first_launch\", True)\nprivacy_policy_url = config_str(\"privacy_policy_url\", \"\")\nshow_guide = config_bool(\"show_guide_on_first_launch\", True)\nenable_video = config_bool(\"enable_video_splash\", False)\nsplash_ms = config_int(\"splash_duration_ms\", 2500)\npull_to_refresh = config_bool(\"enable_pull_to_refresh\", True)\nuser_agent_name = config_str(\"user_agent_name\", \"XJ28App\")\n\ndef swift_str(value):\n    return value.replace(\"\\\\\", \"\\\\\\\\\").replace('\"', '\\\\\"')\n\ndef swift_bool(value):\n    return \"true\" if value else \"false\"\n\nswift = f'''import Foundation\n\n/// Generated by scripts/sync-config.sh from {source.name}. Do not edit by hand.\nenum AppConfig {{\n    static let applicationId = \"{swift_str(application_id)}\"\n    static let appName = \"{swift_str(app_name)}\"\n    static let webURL = \"{swift_str(web_url)}\"\n    static let remoteConfigURL = \"{swift_str(remote_config_url)}\"\n    static let enableRemoteURL = {swift_bool(enable_remote_url)}\n    static let remoteConfigCacheHours = {remote_config_cache_hours}\n    static let showPrivacyOnFirstLaunch = {swift_bool(show_privacy)}\n    static let privacyPolicyURL = \"{swift_str(privacy_policy_url)}\"\n    static let showGuideOnFirstLaunch = {swift_bool(show_guide)}\n    static let enableVideoSplash = {swift_bool(enable_video)}\n    static let splashDurationMs = {splash_ms}\n    static let enablePullToRefresh = {swift_bool(pull_to_refresh)}\n    static let userAgentName = \"{swift_str(user_agent_name)}\"\n}}\n'''\n(root / \"XinJi28\" / \"AppConfig.swift\").write_text(swift, encoding=\"utf-8\")\n\ndef xc_quote(value):\n    if any(ch.isspace() for ch in value) or any(ch in value for ch in '\"\\\\'):\n        escaped = value.replace(\"\\\\\", \"\\\\\\\\\").replace('\"', '\\\\\"')\n        return f'\"{escaped}\"'\n    return value\n\nxcconfig = f'''// Generated by scripts/sync-config.sh from {source.name}. Do not edit by hand.\n#include \"Version.xcconfig\"\nPRODUCT_BUNDLE_IDENTIFIER = {xc_quote(application_id)}\nAPP_DISPLAY_NAME = {xc_quote(app_name)}\n'''\n(root / \"Config\" / \"App.xcconfig\").write_text(xcconfig, encoding=\"utf-8\")\n\nif not real.exists():\n    print(f\">>> 提示: 未找到 app-config.json，正在使用模板 app-config.example.json\")\nprint(\n    f\">>> App 配置[{source.name}]: NAME={app_name} | ID={application_id} | \"\n    f\"WEB_URL={web_url} | REMOTE={str(enable_remote_url).lower()} | \"\n    f\"SHOW_PRIVACY={str(show_privacy).lower()} | SHOW_GUIDE={str(show_guide).lower()} | \"\n    f\"VIDEO_SPLASH={str(enable_video).lower()}\"\n)\nPY\n";
+		};
+		36CC92FF6F84A7078EC0B0C2 /* Sync version.properties */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Sync version.properties";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n# Write Config/Version.xcconfig from version.properties.\nset -euo pipefail\n\nif [[ -n \"${SRCROOT:-}\" ]]; then\n  ROOT=\"$SRCROOT\"\nelse\n  ROOT=\"$(cd \"$(dirname \"$0\")/..\" && pwd)\"\nfi\nPROPS=\"$ROOT/version.properties\"\nOUT=\"$ROOT/Config/Version.xcconfig\"\n\nif [[ ! -f \"$PROPS\" ]]; then\n  cp \"$ROOT/version.properties.example\" \"$PROPS\"\nfi\n\nmajor=$(grep -E '^VERSION_MAJOR=' \"$PROPS\" | head -1 | cut -d= -f2 | tr -d '[:space:]')\npatch=$(grep -E '^VERSION_PATCH=' \"$PROPS\" | head -1 | cut -d= -f2 | tr -d '[:space:]')\ncode=$(grep -E '^VERSION_CODE=' \"$PROPS\" | head -1 | cut -d= -f2 | tr -d '[:space:]')\nmajor=${major:-1}\npatch=${patch:-1}\ncode=${code:-1}\nname=$(printf \"%d.%03d\" \"$major\" \"$patch\")\n\ncat > \"$OUT\" <<EOF\n// Generated by scripts/sync-version.sh from version.properties. Do not edit by hand.\nMARKETING_VERSION = ${name}\nCURRENT_PROJECT_VERSION = ${code}\nEOF\n\necho \"version ${name} (${code})\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD4379490AD6AEDFD1A7FAF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFB54311C315A0864F26A92 /* AppConfig.swift in Sources */,
+				47F5840AD49D7602AEF64DFD /* AppDelegate.swift in Sources */,
+				A043B9F0A4F1D615BBA85E18 /* AppNavigator.swift in Sources */,
+				D3ED4BB6B242E73496ADFC39 /* AppPrefs.swift in Sources */,
+				24A0CF64C8594CAB7E5C96B1 /* Brand.swift in Sources */,
+				6EB6F63D853FC25D8F337BAC /* GuideViewController.swift in Sources */,
+				8438D6B3BD57D739953D6438 /* MainViewController.swift in Sources */,
+				7AF9F0053AB3DAFFCEA6B198 /* PrivacyViewController.swift in Sources */,
+				3FA4FABBFD2F108434C21149 /* RemoteConfig.swift in Sources */,
+				2BE7366749B3851F8BFB5159 /* SceneDelegate.swift in Sources */,
+				2237ECF77789F657ED29BFCD /* ShellConfig.swift in Sources */,
+				76226353435C290BF9E14EFD /* SplashContentView.swift in Sources */,
+				5BB36390BE4D62395DE47036 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7FFDBFA90E40507EE409AA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				602C979092962288E182CBF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		152204C90BAF5100D5CF56F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XinJi28/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = XinJi28;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		358F4F99A9D46ED6C20A2996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF15BCB9ECF2C0EA96E58588 /* App.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACA1E35FBD3FD49F2BA5F22E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF15BCB9ECF2C0EA96E58588 /* App.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D55BFEB03BD84D31029A7C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = XinJi28/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = XinJi28;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D0DABB489B717F0029883E3 /* Build configuration list for PBXProject "XinJi28" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				358F4F99A9D46ED6C20A2996 /* Debug */,
+				ACA1E35FBD3FD49F2BA5F22E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8FB16C689342FFC605A964F1 /* Build configuration list for PBXNativeTarget "XinJi28" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152204C90BAF5100D5CF56F0 /* Debug */,
+				D55BFEB03BD84D31029A7C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AA73495D2482FFF354B33A7 /* Project object */;
+}
