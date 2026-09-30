@@ -37,6 +37,7 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1,2"
         CODE_SIGN_STYLE: Automatic
+        "CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]": NO
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks"
         ENABLE_USER_SCRIPT_SANDBOXING: NO
     preBuildScripts:

@@ -69,16 +69,16 @@ final class PrivacyViewController: UIViewController {
         agreeButton.isEnabled = false
         agreeButton.addTarget(self, action: #selector(agree), for: .touchUpInside)
 
-        let disagree = UIButton(type: .system)
-        disagree.translatesAutoresizingMaskIntoConstraints = false
-        disagree.setTitle("不同意并退出", for: .normal)
-        disagree.setTitleColor(Brand.textSecondary, for: .normal)
-        disagree.addTarget(self, action: #selector(disagree), for: .touchUpInside)
+        let disagreeButton = UIButton(type: .system)
+        disagreeButton.translatesAutoresizingMaskIntoConstraints = false
+        disagreeButton.setTitle("不同意并退出", for: .normal)
+        disagreeButton.setTitleColor(Brand.textSecondary, for: .normal)
+        disagreeButton.addTarget(self, action: #selector(disagree), for: .touchUpInside)
 
         header.addSubview(title)
         footer.addSubview(agreeRow)
         footer.addSubview(agreeButton)
-        footer.addSubview(disagree)
+        footer.addSubview(disagreeButton)
         view.addSubview(header)
         view.addSubview(webView)
         view.addSubview(footer)
@@ -108,10 +108,10 @@ final class PrivacyViewController: UIViewController {
             agreeButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 20),
             agreeButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -20),
             agreeButton.heightAnchor.constraint(equalToConstant: 48),
-            disagree.topAnchor.constraint(equalTo: agreeButton.bottomAnchor, constant: 4),
-            disagree.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 20),
-            disagree.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -20),
-            disagree.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -8)
+            disagreeButton.topAnchor.constraint(equalTo: agreeButton.bottomAnchor, constant: 4),
+            disagreeButton.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 20),
+            disagreeButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: -20),
+            disagreeButton.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -8)
         ])
 
         loadPrivacy()
