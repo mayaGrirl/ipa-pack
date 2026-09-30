@@ -382,7 +382,7 @@ build/ipa/XJ28-release.ipa
 
 1. iPhone 用数据线连上这台 Mac
 2. 手机上点信任此电脑
-3. Xcode → **Window → Devices and Simulators**，确认能看到设备
+3. 在 Mac 上打开 Xcode，点屏幕最上方菜单栏的 **窗口（Window）→ 设备与模拟器（Devices and Simulators）**，确认能看到这台 iPhone
 4. 把 `XJ28-debug.ipa` 或 `XJ28-release.ipa` 拖到设备详情里的 **Installed Apps**
 
 或在 Xcode 里选中这台 iPhone，直接 Run。首次安装若提示不受信任：手机 **设置 → 通用 → VPN 与设备管理**，信任开发者证书。
