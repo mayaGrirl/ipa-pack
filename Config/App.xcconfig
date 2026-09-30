@@ -2,3 +2,5 @@
 #include "Version.xcconfig"
 PRODUCT_BUNDLE_IDENTIFIER = com.xj28a.app
 APP_DISPLAY_NAME = 新记
+CODE_SIGN_STYLE = Automatic
+#include? "Signing.xcconfig"

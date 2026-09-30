@@ -18,13 +18,14 @@
 10. [下拉刷新](#10-下拉刷新)
 11. [远程 URL 配置](#11-远程-url-配置)
 12. [图片与资源规范](#12-图片与资源规范)
-13. [打包 Debug IPA](#13-打包-debug-ipa)
-14. [打包 Release IPA](#14-打包-release-ipa)
-15. [安装到 iPhone](#15-安装到-iphone)
-16. [真机测试清单](#16-真机测试清单)
-17. [常见问题](#17-常见问题)
-18. [项目文件结构](#18-项目文件结构)
-19. [发版前检查清单](#19-发版前检查清单)
+13. [以后补签名证书](#13-以后补签名证书)
+14. [打包 Debug IPA](#14-打包-debug-ipa)
+15. [打包 Release IPA](#15-打包-release-ipa)
+16. [安装到 iPhone](#16-安装到-iphone)
+17. [真机测试清单](#17-真机测试清单)
+18. [常见问题](#18-常见问题)
+19. [项目文件结构](#19-项目文件结构)
+20. [发版前检查清单](#20-发版前检查清单)
 
 ---
 
@@ -112,12 +113,8 @@ open XinJi28.xcodeproj
 
 1. 打开 **Xcode**
 2. **File → Open**，选本目录下的 `XinJi28.xcodeproj`
-3. 左侧选中工程 **XinJi28** → target **XinJi28** → **Signing & Capabilities**
-4. 勾选 **Automatically manage signing**
-5. **Team** 选中开发者团队
-6. 把 10 位 Team ID 记下来，命令行打包要用
 
-模拟器可以直接 Run，不需要 Team。真机和 IPA 必须选 Team。
+模拟器可以直接 Run，不需要签名。真机和 IPA 可以以后再补，步骤见第 13 节。
 
 ---
 
@@ -313,22 +310,69 @@ cp app-config.example.json app-config.json
 
 ---
 
-## 13. 打包 Debug IPA
+## 13. 以后补签名证书
 
-Debug 包装到已注册的开发设备上。
+现在没有证书也可以先在模拟器里运行。要装到 iPhone 或导出 IPA 时，再补签名。Mac 的登录账号、手机里的 Apple ID、用来签名的账号可以各用各的，补签名时不用退出或更换它们。
+
+先确认读到了签名，再真正打包：
+
+```bash
+./scripts/build-ipa.sh check
+```
+
+通过时会打印 `TEAM_ID` 和 `CODE_SIGN_STYLE`。还没填写时，这条命令会停下来并说明要补什么。
+
+### 13.1 用 Apple ID 自动创建证书
+
+这是常用做法。Xcode 会自己生成开发证书和描述文件，不用单独找 `.p12`。
+
+1. 把鼠标移到屏幕最上方，点 **Xcode → Settings → Accounts**。
+2. 左下角点 **+**，选 **Apple ID** 并登录。这一步只加在 Xcode 里。
+3. 选中刚登录的账号。右侧 **Team** 里有一行 10 位字符，那就是 Team ID。免费个人账号一般显示为姓名 **(Personal Team)**。
+4. 在项目根目录执行：
 
 ```bash
 cp Config/Signing.xcconfig.example Config/Signing.xcconfig
 ```
 
-编辑 `Config/Signing.xcconfig`：
+5. 编辑 `Config/Signing.xcconfig`，只改 Team ID：
 
 ```
 DEVELOPMENT_TEAM = 你的10位TeamID
 CODE_SIGN_STYLE = Automatic
 ```
 
-这个文件已在 `.gitignore` 里。也可以打包时临时指定：
+这个文件已在 `.gitignore` 里，不会被提交。
+
+6. 用数据线把 iPhone 连上这台 Mac，手机上点信任。打开 `XinJi28.xcodeproj`，左侧点蓝色的 **XinJi28**，打开 **Signing & Capabilities**，勾选 **Automatically manage signing**。Team 应显示刚才的账号。连上手机后，Xcode 会创建证书和描述文件。
+7. 再执行 `./scripts/build-ipa.sh check`。通过后按第 14 节打包。
+
+钥匙串里可以核对证书：打开 **钥匙串访问**，左侧选 **登录 → 我的证书**，应能看到 `Apple Development: 名字 (TeamID)`。
+
+### 13.2 已经有证书文件和描述文件
+
+证书文件是 `.p12`，描述文件是 `.mobileprovision`。开发包装到自己的手机时，证书名称用 `Apple Development`。Ad Hoc 包用 `Apple Distribution`。
+
+1. 双击 `.p12`，用导出时的密码导入「登录」钥匙串。
+2. 双击 `.mobileprovision` 安装。也可以复制到 `~/Library/MobileDevice/Provisioning Profiles/`。
+3. `Config/Signing.xcconfig` 写成：
+
+```
+DEVELOPMENT_TEAM = 你的10位TeamID
+CODE_SIGN_STYLE = Manual
+CODE_SIGN_IDENTITY = Apple Development
+PROVISIONING_PROFILE_SPECIFIER = 描述文件名称
+```
+
+描述文件名称在 Xcode 的 **Signing & Capabilities** 里能看到，不要带 `.mobileprovision` 后缀。描述文件里的 Bundle ID 要和 `app-config.json` 的 `application_id` 一致，并且包含要安装的那台 iPhone。
+
+4. 执行 `./scripts/build-ipa.sh check`。通过后再打包。
+
+---
+
+## 14. 打包 Debug IPA
+
+Debug 包装到已注册的开发设备上。先按第 13 节写好 `Config/Signing.xcconfig`，并用 `./scripts/build-ipa.sh check` 确认。也可以临时指定 Team，不写进文件：
 
 ```bash
 TEAM_ID=XXXXXXXXXX ./scripts/build-ipa.sh
@@ -346,7 +390,7 @@ TEAM_ID=XXXXXXXXXX ./scripts/build-ipa.sh
 build/ipa/XJ28-debug.ipa
 ```
 
-装到真机必须签名。模拟器不需要 Team，也不出 IPA：
+装到真机必须已经补好签名。模拟器不需要 Team，也不出 IPA：
 
 ```bash
 ./scripts/build-simulator.sh
@@ -356,7 +400,7 @@ build/ipa/XJ28-debug.ipa
 
 ---
 
-## 14. 打包 Release IPA
+## 15. 打包 Release IPA
 
 签名使用 Apple 证书和描述文件，由 Xcode 按 Team 管理。
 
@@ -378,7 +422,7 @@ build/ipa/XJ28-release.ipa
 
 ---
 
-## 15. 安装到 iPhone
+## 16. 安装到 iPhone
 
 1. iPhone 用数据线连上这台 Mac
 2. 手机上点信任此电脑
@@ -389,7 +433,7 @@ build/ipa/XJ28-release.ipa
 
 ---
 
-## 16. 真机测试清单
+## 17. 真机测试清单
 
 - 桌面名称和 `app_name` 一致，图标正常
 - 冷启动能看到启动图，结束后进入后续页面
@@ -404,13 +448,13 @@ build/ipa/XJ28-release.ipa
 
 ---
 
-## 17. 常见问题
+## 18. 常见问题
 
 **提示只有 Command Line Tools**  
 执行 `xcode-select -p`。若不是 Xcode.app，按第 2.2 节安装完整 Xcode 并切换。
 
 **打包要求 Team ID**  
-按第 13 节写 `Config/Signing.xcconfig`，或运行时加 `TEAM_ID=`。
+按第 13 节补签名，然后执行 `./scripts/build-ipa.sh check`。也可以运行时加 `TEAM_ID=`。
 
 **未签名的 IPA 能装到手机吗**  
 不能。真机安装必须有开发者签名。模拟器运行不需要签名。
@@ -429,7 +473,7 @@ build/ipa/XJ28-release.ipa
 
 ---
 
-## 18. 项目文件结构
+## 19. 项目文件结构
 
 ```
 ipa-pack/
@@ -456,7 +500,7 @@ ipa-pack/
 
 ---
 
-## 19. 发版前检查清单
+## 20. 发版前检查清单
 
 - `app-config.json` 里的 `web_url` 是正式地址
 - 协议、引导开关符合这次发布
@@ -464,4 +508,4 @@ ipa-pack/
 - `version.properties` 的大版本正确
 - `Config/Signing.xcconfig` 的 Team 是要使用的账号
 - `./scripts/build-ipa.sh adhoc` 成功，产物是 `build/ipa/XJ28-release.ipa`
-- 在登记过的真机安装，并走完第 16 节清单
+- 在登记过的真机安装，并走完第 17 节清单

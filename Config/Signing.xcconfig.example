@@ -1,4 +1,11 @@
-// Copy to Config/Signing.xcconfig and fill in your Apple Developer Team ID.
-// Xcode: XinJi28 target → Signing & Capabilities → Team, the 10-character ID.
-DEVELOPMENT_TEAM = 
+// 复制为本目录的 Signing.xcconfig 后填写。该文件已被 git 忽略，不会提交。
+// Team ID 在 Xcode → Settings → Accounts 里，选中 Apple ID 后看右侧 Team 的 10 位字符。
+// 步骤见 README「以后补签名证书」。
+
+DEVELOPMENT_TEAM =
 CODE_SIGN_STYLE = Automatic
+
+// 已经有 .p12 证书和 .mobileprovision 描述文件时，改用下面三行，并删掉上面的 Automatic 那一行：
+// CODE_SIGN_STYLE = Manual
+// CODE_SIGN_IDENTITY = Apple Development
+// PROVISIONING_PROFILE_SPECIFIER = 描述文件名称
